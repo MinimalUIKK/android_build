@@ -25,11 +25,9 @@ PRODUCT_NAME := core
 PRODUCT_PACKAGES += \
     BackupRestoreConfirmation \
     DownloadProvider \
-    HTMLViewer \
     MediaProvider \
     PackageInstaller \
     SettingsProvider \
-    Shell \
     bu \
     com.android.location.provider \
     com.android.location.provider.xml \
@@ -59,7 +57,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS := core:conscrypt:okhttp:core-junit:bouncycastle:ext:framework:framework2:android.policy:services:apache-xml:webviewchromium
 
-PRODUCT_RUNTIMES := runtime_libdvm_default
-PRODUCT_RUNTIMES += runtime_libart
+PRODUCT_RUNTIMES := runtime_libart_default
+PRODUCT_RUNTIMES += runtime_libdvm
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
